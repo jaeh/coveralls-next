@@ -42,7 +42,7 @@
     "lint": "eslint .",
     "mocha": "_mocha -b -R spec",
     "test-cov": "nyc npm run mocha",
-    "test-coveralls": "nyc npm run mocha && shx cat ./coverage/lcov.info | node ./bin/coveralls.js",
+    "test-coveralls": "nyc npm run mocha && node ./bin/test-coveralls.js",
     "test": "npm run lint && npm run mocha"
   },
   "dependencies": {
@@ -60,7 +60,6 @@
     "nyc": "15.1.0",
     "prettier": "2.6.1",
     "should": "13.2.3",
-    "shx": "0.3.4",
     "sinon": "13.0.1"
   },
   "engines": {
